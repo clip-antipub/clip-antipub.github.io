@@ -1,0 +1,40 @@
+---
+---
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clip ─ Antipub</title>
+  <link rel="icon" type="image/png" href="/ressources/favicon.png">
+  <link rel="shortcut icon" href="/ressources/favicon.ico">
+  {% feed_meta %}
+  <link rel="stylesheet" href="/ressources/fonts.css">
+  <link rel="stylesheet" href="/ressources/style.css">
+</head>
+<body>
+
+<h1>Clip ─ Antipub</h1>
+
+<header>
+  <p>Collectif de Libération de l'Invasion Publicitaire. ccusam honestatis cu vis, ad impedit definitiones his. Pri ei epicuri propriae. No nominavi gubergren cum, dicant atomorum dissentiunt et pro, an consul option disputando nam. Soluta moderatius et ius, id recusabo sapientem consulatu usu. Solum aliquando eloquentiam ad sed. Ne has quis constituam, legimus quaestio sed ex, cu vis quod case vulputat.</p>
+</header>
+
+<nav>
+  {% for page in site.posts %}
+    <a href="#{{page.id}}">{{page.title}}</a><br>
+  {% endfor %}
+</nav>
+
+{% for page in site.posts %}
+  <hr>
+  <article id="{{page.id}}">
+    <h2>{{ page.title }}</h2>
+    <time>{{ page.date | date: "%Y.%m.%d" }}</time>
+    {{ page.content }}
+  </article>
+{% endfor %}
+
+<footer><a href="https://github.com/clip-antipub/clip-antipub.github.io">Source</a> ─ <a href="mailto:clip.antipub@gmail.com">Contact</a></footer>
+
+</body>
+</html>

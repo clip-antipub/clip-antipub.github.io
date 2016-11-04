@@ -1,0 +1,72 @@
+body {
+  margin: auto;
+  padding: 40px;
+  max-width: 700px;
+  line-height: 1.6;
+  font-size: 18px;
+  font-family: "tiempos";
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid cadetblue;
+  color: cadetblue;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+a:focus , a:hover {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 300%;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 200%;
+  margin-bottom: 0px;
+}
+
+header {
+  max-width: 400px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  float: left;
+}
+
+nav {
+  margin-top: 17px;
+  margin-bottom: 17px;
+  max-width: 280px;
+  float: left;
+}
+
+p {
+  display: block;
+  font-size: 17.1px;
+  line-height: 24.8497px;
+}
+
+footer {
+  clear: both;
+  font-size: 85%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+hr {
+  clear: both;
+  margin-top: 40px;
+  border: 0;
+  height: 1px;
+  background: #666;
+}
+
+time {
+  font-size: 90%;
+  color: gray;
+}
